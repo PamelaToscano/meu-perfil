@@ -1,23 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+/* tarefa 4 */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 20px;
+}
+
 
 header {
   background-color: #0077cc;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+nav {
+  margin: 20px 0;
   text-align: center;
 }
 
-main {
-  padding: 20px;
+nav a {
+  color: #0077cc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: #ff9900;
+}
+
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+
+aside {
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  background-color: #e2e8f0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
 
 footer {
   text-align: center;
-  background-color: #ddd;
-  padding: 10px;
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  header, main, aside {
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    margin: 0 10px;
+  }
+
+  aside {
+    margin: 20px 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  animation: fadeIn 1s ease-in-out;
 }
