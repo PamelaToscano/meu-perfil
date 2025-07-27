@@ -1,3 +1,12 @@
-# meu-perfil
-Projeto de perfil com HTML e CSS.
-Este projeto é uma página de perfil desenvolvida com HTML5 semântico e CSS, contendo informações sobre mim, minhas habilidades, projetos e formas de contato.
+# Meu Perfil
+
+Este projeto é uma página de perfil pessoal desenvolvida como atividade do curso de Desenvolvimento Full Stack da +Prati e Codifica.
+Utiliza HTML5 semântico e CSS3 com recursos como Flexbox, responsividade e animações simples.
+
+## Conteúdo
+
+- Sobre mim  
+- Habilidades  
+- Projetos (em breve)  
+- Contato  
+- Links para redes sociais
