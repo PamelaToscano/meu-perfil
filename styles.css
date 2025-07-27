@@ -1,10 +1,10 @@
 /* tarefa 4 */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -20,6 +20,10 @@ header {
   padding: 30px 20px;
   text-align: center;
   border-radius: 8px;
+}
+
+header h1 {
+  animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -49,7 +53,6 @@ main {
   margin: 0 auto 20px auto;
 }
 
-
 section {
   margin-bottom: 20px;
 }
@@ -64,6 +67,17 @@ aside {
   text-align: center;
 }
 
+aside a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+aside a:hover {
+  color: #ff9900;
+}
+
 
 footer {
   text-align: center;
@@ -71,6 +85,7 @@ footer {
   font-size: 0.9em;
   margin-top: 30px;
 }
+
 
 @media (max-width: 768px) {
   header, main, aside {
@@ -97,11 +112,14 @@ footer {
   }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
-header h1 {
-  animation: fadeIn 1s ease-in-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
